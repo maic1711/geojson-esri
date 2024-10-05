@@ -29,14 +29,23 @@
           basemap: "arcgis/topographic" // basemap styles service
         });
 
-        const view = new MapView({
-          map: map,
-          center: [0, 0], // Longitude, latitude
-          zoom: 2, // Zoom level
-          container: "viewDiv" // Div element
+        // URL to GeoJSON file with geocoded mega cities
+        const geojsonUrl = "https://ufl.maps.arcgis.com/home/item.html?id=2c4299da20b2467b84eb018f0f2bbfd2";
+
+        // create GeoJSON layer to add to map
+        const geojsonLayer = new GeoJSONLayer({
+          url: geojsonUrl
         });
 
-        const url = "https://ufl.maps.arcgis.com/home/item.html?id=2c4299da20b2467b84eb018f0f2bbfd2";
+        map.add(geojsonLayer);
+
+        // set view to see entire map
+        const view = new MapView({
+          container: "viewDiv",
+          map: map,
+          center: [0, 0],
+          zoom: 2
+        });
 
       });
     </script>
