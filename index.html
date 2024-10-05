@@ -26,11 +26,10 @@
         esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurCp0yZc6iRenDrhA3AMRYMb-ybUwBFVK_OKiBCZf4k4ql4ildsvRvwu2n9YSSahzZiyjQ67cvFxEB8U45MsT1tnpVqKoAKAqt-T4ufLFCv_TZnloiIBdv33_qGIEV0i_K1z9F-HXXGTvUmcfZbvLckqFqTUfJnqB6oAN5tl2fGKT-OME4yqyYGmWeCrpV0wOi2BzpY3-HqsVZJ3IFuxIXc8.AT1_uMncBI2j";
 
         // URL to GeoJSON file with geocoded mega cities
-        const geojsonUrl = "https://www.arcgis.com/home/item.html?id=b0c28974b82b4144a9bff694b5f23e98";
+        const geojsonUrl = "https://arcgis.com/home/item.html?id=2c4299da20b2467b84eb018f0f2bbfd2";
 
 
         // renderer to show points where cities are located
-
         const renderer = {
           type: "simple",
           symbol: {
@@ -51,13 +50,11 @@
           layers: [geojsonLayer]
         });
 
-        // map.add(geojsonLayer);
-
         // set view to see entire map
         const view = new MapView({
           container: "viewDiv",
           map: map,
-          center: [0, 0],
+          center: [15.35, 25.65],
           zoom: 3
         });
 
