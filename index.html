@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+    <title>Mega Cities</title>
 
     <style>
       html,
@@ -30,7 +30,7 @@
         });
 
         // URL to GeoJSON file with geocoded mega cities
-        const geojsonUrl = "https://ufl.maps.arcgis.com/home/item.html?id=2c4299da20b2467b84eb018f0f2bbfd2";
+        const geojsonUrl = "arcgis.com/home/item.html?id=2c4299da20b2467b84eb018f0f2bbfd2";
 
         // create GeoJSON layer to add to map
         const geojsonLayer = new GeoJSONLayer({
@@ -44,8 +44,9 @@
           container: "viewDiv",
           map: map,
           center: [0, 0],
-          zoom: 2
+          zoom: 5
         });
+
 
       });
     </script>
