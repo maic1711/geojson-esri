@@ -49,8 +49,9 @@
 
         const map = new Map({
           basemap: "arcgis/topographic", // basemap styles service
-          layers: [geojsonLayer]
         });
+
+        map.add(geojsonLayer);
 
         // set view to see entire map
         const view = new MapView({
