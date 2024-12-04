@@ -23,12 +23,12 @@
     <script>
       require(["esri/config","esri/Map", "esri/layers/GeoJSONLayer", "esri/views/MapView"], 
       
-      function(esriConfig, Map, GeoJSONLayer, MapView){
+      (esriConfig, Map, GeoJSONLayer, MapView) => {
 
         esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurCp0yZc6iRenDrhA3AMRYMb-ybUwBFVK_OKiBCZf4k4ql4ildsvRvwu2n9YSSahzZiyjQ67cvFxEB8U45MsT1tnpVqKoAKAqt-T4ufLFCv_TZnloiIBdv33_qGIEV0i_K1z9F-HXXGTvUmcfZbvLckqFqTUfJnqB6oAN5tl2fGKT-OME4yqyYGmWeCrpV0wOi2BzpY3-HqsVZJ3IFuxIXc8.AT1_uMncBI2j";
 
         // URL to GeoJSON file with geocoded mega cities
-        const geojsonUrl = "https://arcgis.com/home/item.html?id=2c4299da20b2467b84eb018f0f2bbfd2";
+        const geojsonUrl = "https://arcg.is/0T5WmL";
 
 
         // renderer to show points where cities are located
